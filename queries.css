@@ -8,10 +8,6 @@
 		font-size: 3rem;
 	}
 
-	.divider {
-		padding-top: 4rem;
-	}
-
 
 }
 
@@ -71,7 +67,7 @@
 	}
 }
 
-/* max-width/breakpoint for tablets = 944px
+/* max-width/breakpoint for tablets of 944px
 944/16px = 59em */
 @media (max-width:59em) {
 	html {
@@ -188,7 +184,6 @@
 	.cta-form {
 		grid-template-columns: 1fr;
 		row-gap: 2rem;
-		/* column-gap: 3rem; */
 		padding: 0.5rem;
 	}
 
@@ -200,4 +195,101 @@
 	.btnn {
 		margin-top: 2rem;
 	}
+
+	/* mobile navigation */
+	.icon-mobile-nav {
+		display: block;
+	}
+
+	/* .main-nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		/* Hide Navigation */
+	/* does not allow transition */
+	/* display: none; */
+	/* opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+	transform: translateX(100%);
+	transition: all 1s ease-in;
+} */
+	/* to show the hidden element */
+	.nav-open .main-nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+		transform: translateX(0);
+	}
+
+	.nav-open .icon-mobile-nav[name="close-outline"] {
+		display: block;
+	}
+
+	.nav-open .icon-mobile-nav[name="menu-sharp"] {
+		display: none;
+	}
+
+	.main-nav-list {
+		display: flex;
+		flex-direction: column;
+		gap: 4.8rem;
+		display: none;
+	}
+
+	.main-nav-list li:link,
+	.main-nav-list li:visited {
+		font-size: 3rem;
+	}
+}
+
+/* Below 704px (Smaller tablet) */
+@media (max-width: 44em) {
+
+	.grid--4-cols,
+	.grids {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.diet {
+		/* to span the last column to the end */
+		grid-column: 1/-1;
+		justify-self: center;
+	}
+
+	.all_recipes a {
+		font-size: 3rem;
+	}
+
+	.Pricing {
+		width: 100%;
+		padding: 1rem;
+	}
+
+
+
+	/* to make the last three grid in thr footer section */
+	.grid--footer {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.logo-col,
+	.address-col {
+		grid-column: span 3;
+	}
+
+
+	.nav-col {
+		grid-row: 1;
+		grid-column: span 2;
+	}
+
 }

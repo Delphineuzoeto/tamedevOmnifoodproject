@@ -9,6 +9,8 @@ body {
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
+	/* hide all elements that overfloys the viewport in the x-axis  */
+	overflow-x: hidden;
 }
 
 html {
@@ -23,6 +25,7 @@ html {
 
 	height: 6.6rem;
 	padding: 0 4.5rem;
+	position: relative;
 }
 
 .header img {
@@ -53,10 +56,29 @@ html {
 
 }
 
+/* Menu Icon */
+.btn-mobile-nav {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.icon-mobile-nav {
+	height: 4.8rem;
+	width: 4.8rem;
+	color: #333;
+	display: none;
+}
+
+/* selected the close icon attribute using the icons name  */
+.icon-mobile-nav[name="close-outline"] {
+	display: none;
+}
+
 .call-to-action a:link,
 .call-to-action a:visited {
 	display: inline-block;
-	padding: 0.5rem 1rem;
+	padding: 1rem 1.6rem;
 	border-radius: 10px;
 	background-color: #e67e22;
 	color: #fff;
@@ -75,6 +97,7 @@ html {
 	margin: 0 auto;
 	align-items: center;
 	gap: 9.6rem;
+	padding-top: 8rem;
 }
 
 
@@ -532,6 +555,7 @@ strong {
 .Pricing {
 	background-color: #fdf2e9;
 	border-radius: 11px;
+	width: 75%;
 
 
 }
@@ -604,6 +628,7 @@ strong {
 	/* overlayed the img usong the linear-gradient to reduce its brightness */
 	background-image: linear-gradient(#cd782e3a, #391d1da8), url(Images/eating.jpg);
 	background-size: cover;
+	background-position: center;
 
 }
 
