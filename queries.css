@@ -80,7 +80,8 @@
 	}
 
 	.hero-img {
-		padding: 3rem 2rem 23rem 13rem;
+		width: 60%;
+		padding-right: 1rem;
 	}
 
 	.hero-section {
@@ -274,8 +275,6 @@
 		padding: 1rem;
 	}
 
-
-
 	/* to make the last three grid in thr footer section */
 	.grid--footer {
 		grid-template-columns: repeat(6, 1fr);
@@ -290,6 +289,107 @@
 	.nav-col {
 		grid-row: 1;
 		grid-column: span 2;
+		margin-bottom: 3.2rem;
+	}
+
+	.logos {
+		gap: 1rem;
+	}
+
+	.logos img {
+		height: 2rem;
+	}
+
+}
+
+@media (max-width: 34em) {
+	.grid {
+		row-gap: 4.8rem;
+	}
+
+	.grid--2-cols,
+	.grid--4-cols,
+	.grids {
+		grid-template-columns: 1fr;
+	}
+
+	.hero-section {
+		padding: 2.4rem 0 4.8rem 0;
+	}
+
+	.divider {
+		padding: 0 3.2rem;
+	}
+
+	.hero-img {
+		width: 80%;
+	}
+
+	.logos img {
+		height: 1.2rem;
+	}
+
+	.btn:link,
+	.btn:visited {
+		font-size: 1rem;
+		padding: 2rem 1.6rem;
+		font-weight: 600;
+	}
+
+	.delivered-imgs img {
+		height: 2.4rem;
+		width: 2.4rem;
+
+		/* to overlap the images */
+		margin-left: -0.5rem;
+		border: 2px solid #fdf2e9;
+	}
+
+	.delivered-desc {
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+
+	.for-img:nth-child(2) {
+		/* to make the nth-child(2) to become the first elemnt */
+		grid-row: 1;
+	}
+
+	.for-img:nth-child(6) {
+		grid-row: 5;
+	}
+
+	/* to move the phone image a bit down */
+	.for-img {
+		transform: translateY(2.4rem);
+	}
+
+	.testimonials {
+		grid-template-columns: 1fr;
+	}
+
+	.gallery {
+		grid-template-columns: repeat(3, 4fr);
+		gap: 1.2rem;
+
+	}
+
+	.cta {
+		grid-template-columns: 1fr;
+
+	}
+
+	/* manually gave the image a height b/cos its div container doesnt have a height and was easily squashed */
+	.CTA-img {
+		height: 32rem;
+		grid-row: 1;
+	}
+
+	.CTA-text .sec-heading,
+	.cta-text {
+		margin-bottom: 0.5rem;
+		padding: 1rem 1rem;
+
 	}
 
 }
