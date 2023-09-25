@@ -1,0 +1,364 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --black-50: rgba(0, 0, 0, .50);
+    --black-80: rgba(0, 0, 0, .80);
+
+    --dark: #111111;
+    --dark-50: rgba(17, 17, 17, .50);
+    --dark-80: rgba(17, 17, 17, .80);
+
+    --grey: #bbbaba;
+    --grey-80: rgba(187, 186, 186, .80);
+    --grey-50: rgba(187, 186, 186, .10);
+
+    --dark-grey: #2f4f4f;
+    --dark-grey-50: rgba(47, 79, 79, .50);
+    --dark-grey-80: rgba(47, 79, 79, .80);
+    
+    --light-grey: #d3d3d3;
+    --light-grey-80: rgba(211, 211, 211, .80); 
+    --light-grey-50: rgba(211, 211, 211, .50); 
+	
+    /* main project color */
+    --text-main: #555555;
+    --bg-main: #ec760f;
+    --bg-main-50: rgba(237, 119, 15, .50);
+    --bg-main-80: rgba(236, 118, 15, .80);
+    --bg-main-light: #fdf2e9;
+    --bg-main-light-80: #f0efee;
+    --bg-main-dark: #a76d3b;
+    --bg-main-grey: #868e96;
+    --btn__primary: #e67e22;
+    --btn__primary-hover: #f77808;
+    --btn__outline: #352a23;
+    --btn__outline-hover: #291e18;
+    --cta: var(--bg-main);
+	--cta-hover: #fc7f11;
+    --section-padding: 10rem 2rem;
+    /* end of main project color */
+
+    /* default system */
+    --bg-default: #e2dddd;
+    --bg-primary: #008ca9;
+    --bg-secondary: #6b7278;
+    --bg-info: #0dcaf0;
+    --bg-danger: #dc3545;
+    --bg-success: #198754;
+    --bg-warning: #ffc107;
+
+    /* text */
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --text-danger: #ff0000;
+    --text-info: #17a2b8;
+    --text-success: #019f01;
+    --text-warning: #fcab32;
+    --transparent: transparent;
+
+    /* errors */
+    --danger: #ff0000;
+    --info: #17a2b8;
+    --success: #019f01;
+    --error: #000000;
+    --warning: #fcab32;
+
+    /* social */
+    --facebook: #4267b2;
+    --google: #4285f4;
+    --instagram: #d1425f;
+    --youtube: #ff0000;
+    --twitter: #1da1f2;
+    --whatsapp: #128C7E;
+    --messenger: #00B2FF;
+    --mewe: #5E5097;
+
+    /* transition */
+	--transition: all ease-in 0.1s;
+	--transition-1: var(--transition);
+	--transition-2: all ease-in 0.2s;
+	--transition-3: all ease-in 0.3s;
+	--transition-4: all ease-in 0.4s;
+	--transition-5: all ease-in 0.5s;
+
+    /* box-shadow */
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --box-shadow-1: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+    --box-shadow-2: rgba(0, 0, 0, 0.4) 0px 3px 5px;
+    --box-shadow-3: rgba(33, 35, 38, 0.10) 0px 10px 10px -10px;
+    --box-shadow-4: rgba(0, 0, 0, 0.10) 0px 4px 6px -1px, rgba(0, 0, 0, 0.6) 0px 2px 4px -1px;
+    --box-shadow-5: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    --box-shadow-6: rgba(17, 17, 26, 0.10) 0px 0px 16px;
+    --box-shadow-7: rgba(17, 17, 26, 0.5) 0px 1px 0px, rgba(17, 17, 26, 0.10) 0px 0px 8px;
+    --box-shadow-8: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    --box-shadow-9: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    --box-shadow-10: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    --box-shadow-11: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    --box-shadow-12: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*:focus, 
+*:active {
+	outline: none;
+    box-shadow: none;
+}
+strong {
+	font-weight: 600;
+}
+.mb-34 {
+	margin-bottom: 3.4rem !important;
+}
+.mb-30 {
+	margin-bottom: 3rem !important;
+}
+.section-padding{
+    padding: var(--section-padding);
+}
+.clearfix {
+    overflow: hidden !important;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container {
+	width: 100%;
+	max-width: 120rem;
+	padding: 0 3.2rem;
+	margin: 0 auto;
+}
+.container-main {
+	width: 100%;
+	max-width: 130rem;
+	padding: 5rem 2rem;
+	margin: 0 auto;
+}
+.d-block{
+    display: block !important;
+}
+.d-flex{
+	display: flex !important;
+}
+.flex-align-center{
+	align-items: center !important;
+}
+.flex-align-left{
+	align-items: left !important;
+}
+.flex-align-right{
+	align-items: right !important;
+}
+.flex-justify-center{
+	justify-content: center !important;
+}
+.flex-justify-left{
+	justify-content: left !important;
+}
+.flex-justify-right{
+	justify-content: right !important;
+}
+.text-center{
+	text-align: center !important;
+}
+.d-grid{
+	display: grid !important;
+}
+.grid {
+	display: grid;
+	column-gap: 9.4rem;
+	row-gap: 4rem;
+}
+.grids {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5rem;
+}
+.grid-2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+	grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-cols {
+	grid-template-columns: repeat(5, 1fr);
+}
+.grid-footer {
+	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.grid-grow-1{
+    grid-row: 1;
+}
+.grid-grow-2{
+    grid-row: 2;
+}
+.grid-grow-3{
+    grid-row: 3;
+}
+.grid-grow-4{
+    grid-row: 4;
+}
+.grid-grow-5{
+    grid-row: 5;
+}
+.grid-grow-6{
+    grid-row: 6;
+}
+.btn {
+	display: inline-block;
+	background-color: var(--bg-main);
+	color: var(--text-white);
+	font-size: 1.6rem;
+	padding: 1.4rem 1.6rem;
+    text-align: center;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	transition: var(--transition-1);
+}
+
+/* I did not use this, but just a reminder for future project */
+.text-player {
+    background: -webkit-linear-gradient(63deg, var(--black), var(--warning) 51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--transparent);
+}
+
+/* button to top scroller */
+.b2top {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fdbd13;
+    padding: 10px;
+    bottom: 80px;
+    right: 20px;
+    border-radius: 100px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+    z-index: 10;
+    transition: var(--transition-2);
+    visibility: hidden;
+}
+.b2top:hover {
+    background: rgba(253, 189, 19, 0.52);
+}
+.b2top a {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    color: #ee7409;
+    transform: scale(0.7) rotate(270deg);
+}
+.b2top a svg, .b2top a img {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    object-fit: contain;
+    fill: currentColor;
+}
+
+@media(max-width: 767px){
+    .b2top{
+        bottom: 140px;
+    }
+    .grid-grow-mobile-1{
+        grid-row: 1;
+    }
+    .grid-grow-mobile-2{
+        grid-row: 2;
+    }
+    .grid-grow-mobile-3{
+        grid-row: 3;
+    }
+    .grid-grow-mobile-4{
+        grid-row: 4;
+    }
+    .grid-grow-mobile-5{
+        grid-row: 5;
+    }
+    .grid-grow-mobile-6{
+        grid-row: 6;
+    }
+}
+
+/* Apple Css Auto Zoom Disable on input elements */
+/* I did not use this, but just a reminder for future project */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    @media(max-width: 767px){
+        select,
+        textarea,
+        input, 
+        .note-editor.note-frame .note-editing-area .note-editable{
+            font-size: 16px !important;
+            font-weight: 300;
+        }
+    }
+}
+
+/*REACT LOADER*/
+/* I did not use this, but just a reminder for future project */
+/* to see the example, visit updated/preload.html */
+@-webkit-keyframes react-loading-skeleton {
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes react-loading-skeleton {
+    100% {
+        transform: translateX(100%);
+    }
+}
+.react-loader {
+    --base-color: #ebebeb;
+    --highlight-color: #f5f5f5;
+    --animation-duration: 1.5s;
+    --animation-direction: normal;
+    --pseudo-element-display: block;
+
+    /* Enable animation */
+    background-color: var(--base-color);
+    width: 100%;
+    border-radius: 0.25rem;
+    display: inline-flex;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Necessary for overflow: hidden to work correctly in Safari */
+}
+.react-loader::after {
+    content: ' ';
+    display: var(--pseudo-element-display);
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        90deg,
+        var(--base-color),
+        var(--highlight-color),
+        var(--base-color)
+    );
+    transform: translateX(-100%);
+    animation-name: react-loading-skeleton;
+    animation-direction: var(--animation-direction);
+    animation-duration: var(--animation-duration);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+/* use this class on any element that has height and see it's effect */
+/*END REACT LOADER*/

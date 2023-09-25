@@ -1,0 +1,205 @@
+/* 
+    0px - 575px | XS
+    576px - 767px | SM
+    568px - 991x | MD
+    992px - 1199px | LG
+    1200px - 1399px | XL
+    1400px and above | XXL 
+
+    When it comes to media queries, stick to using px only
+*/
+@media (max-width:767px) {
+    .navbar {
+        font-size: 1.5rem;
+    }
+    .navbar ul{
+        display: block;
+    }
+    .navbar ul li a{
+        padding: 1rem;
+    }
+    .navbar .cta-button a {
+        width: 80%;
+        margin: 2rem 0 0 0.78rem;
+        padding: 1.4rem 1.6rem;
+    }
+    .navbar-left{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 6rem 2.5rem 1.5rem 2.5rem;
+        width: 70%;
+        height: 100%;
+        background: var(--white);
+        transition: var(--transition);
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    }
+    .navbar-collapse{
+        left: -70%;
+    }
+    .hero-wrapper{
+        flex-direction: column;
+    }
+    .hero-heading{
+        font-size: 3.6rem;
+    }
+    .hero-img-wrapper[mobile] {
+        display: none;
+        visibility: hidden;
+    }
+    .delivered-meals{
+        display: block;
+        margin-top: 5rem;
+    }
+    .delivered-desc {
+        padding: 2rem 0 0;
+    }
+    .logos img {
+        height: 2rem;
+    }
+    .featured-section .logos {
+        animation: marquee-slide 10s linear infinite;
+    }
+    .section-how-it-works .card-wrapper{
+        grid-template-columns: 1fr;
+        row-gap: 3.5rem;
+    }
+    .card-image-holder[mobile]{
+        display: none;
+        visibility: hidden;
+    }
+    .sec-heading{
+        font-size: 2rem;
+    }
+    .card-text-holder_number {
+        font-size: 3.5rem;
+    }
+    .card-text-holder__heading {
+        font-size: 2rem;
+    }
+    .card-text-holder__desc{
+        font-size: 1.8rem;
+    }
+    .card-image-holder::before {
+        width: 35%;
+        padding-bottom: 35%;
+    }
+    .card-image-holder::after {
+        width: 30%;
+        padding-bottom: 30%;
+    }
+    .card-image-holder img {
+        width: 25%;
+    }
+    .margin-container-with-grids{
+        grid-template-columns: 1fr;
+        row-gap: 3.5rem;
+    }
+    .testimonial_section,
+    .testimonials,
+    .subscriber {
+		grid-template-columns: 1fr;
+	}
+    .subscriber-section{
+        padding: 6rem 0rem;
+    }
+    .subscriber-section .container{
+        padding: 0 2.2rem;
+    }
+    .subscriber-bg-image[mobile]{
+        display: none;
+        visibility: hidden;
+    }
+    .subscriber-content{
+        padding: 4rem 3rem 4rem;
+    }
+    .subscriber-content .sec-heading{
+        font-size: 3rem;
+        font-weight: 800;
+    }
+    .subscriber-content__details {
+        font-size: 1.5rem;
+    }
+    .subscriber-form{
+        grid-template-columns: 1fr;
+    }
+    .testimonials {
+        gap: 4rem;
+    }
+    .testimonial-container {
+        padding: 7.6rem 3rem;
+    }
+    .testimonial-text {
+        font-size: 1.6rem;
+    }
+    .grid--2-cols, .grid--4-cols, .grids {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-footer__grid {
+        grid-template-columns: 1fr; /* On mobile, one column */
+    }
+    .nav-footer__wrapper-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+    }
+    .nav-footer__wrapper {
+        grid-row: 1;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-wrapper__resources {
+        grid-column: 1 / -1; /* Takes full width on mobile */
+    }
+}
+
+@media (max-width:575px) {
+    
+}
+
+@media (max-width:992px) {
+    .hero-desc {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:768px) {
+    
+}
+
+@media (min-width:992px) {
+    
+}
+
+@media (min-width:1200px) {
+    .hero-heading {
+        font-size: 6.2rem;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .hero-heading{
+        font-size: 3.6rem;
+    }
+    .sec-heading{
+        font-size: 3rem;
+    }
+    .card-text-holder_number {
+        font-size: 5rem;
+    }
+    .card-text-holder__heading {
+        font-size: 2.4rem;
+    }
+    .card-text-holder__desc{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:568px) and (max-width:991px) {
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+}
